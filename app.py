@@ -23,7 +23,7 @@ Either as with the title by just creating a string (or an f-string). Or as with 
 - passenger count
 '''
 
-date = st.date_input(
+'''date = st.date_input(
      "Pickup date",
      datetime.date(2019, 7, 6))
 time = st.time_input('Set an alarm for', datetime.time(8, 45))
@@ -33,7 +33,7 @@ dropoff_longitude = st.number_input('Dropoff longitude')
 dropoff_latitude = st.number_input('Dropoff latitude')
 passenger_count = st.slider('Passenger count', 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
 
-
+'''
 '''
 ## Once we have these, let's call our API in order to retrieve a prediction
 
