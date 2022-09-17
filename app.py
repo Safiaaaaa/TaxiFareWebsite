@@ -2,6 +2,9 @@ import streamlit as st
 import datetime
 import requests
 import pandas as pd
+#from streamlit.folium import folium_static
+import folium
+
 
 '''
 ### Predict the fare amount of your taxi ride in NYC'''
@@ -21,6 +24,7 @@ dropoff_longitude = st.number_input('Dropoff longitude')
 dropoff_latitude = st.number_input('Dropoff latitude')
 passenger_count = st.slider('Passenger count', 1, 10,1)
 
+m = folium.Map(location=[pickup_latitude, pickup_longitude], zoom_start=6)
 
 ## Once we have these, let's call our API in order to retrieve a prediction
 
