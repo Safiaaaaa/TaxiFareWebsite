@@ -2,7 +2,7 @@ import streamlit as st
 import datetime
 import requests
 import pandas as pd
-#from streamlit.folium import folium_static
+from streamlit_folium import folium_static
 import folium
 
 
